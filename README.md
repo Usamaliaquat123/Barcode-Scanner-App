@@ -1,4 +1,7 @@
 
+#This app is in Beta Release
+###and Not Yet Completed. Developers Working on it...
+
 # Barcode Scanner App
 
 Barcode scanner app is an Android , iOs and Windows Phone app for generating and scanning **Qrcodes**  and saving into firebase firestore . You can access previous qrcodes formats and values by logging into your app account. This app is basically for brands , firms who wants scan products **Qrcodes** and generate products **Qrcodes**.
