@@ -1,7 +1,7 @@
 
-#This app is in Beta Release
+This app is in Beta Release
 
-and Not Yet Completed. Developers Working on it
+and Not Yet Completed. Developers Working on it...
 
 
 
