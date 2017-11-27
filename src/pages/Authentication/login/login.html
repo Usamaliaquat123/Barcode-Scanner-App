@@ -1,0 +1,51 @@
+
+<ion-content style="background-color:#292B32;">
+    
+    <div style=" color: white;
+   position: absolute;
+   top: 0;
+   padding: 10vw;
+   text-align: center;
+   width: 100%;
+   margin: 0 auto;
+   z-index: 2;">
+     <!--App logo  -->
+       
+             <div style="text-align:center; margin-top: 25%;">
+                 <img src="./assets/imgs/app/1.png" width="140"height="140">
+            </div> 
+        
+     <!-- login text box -->
+    <div style="margin-top:20%">
+        <p style="color:#727F89;font-size:12px; text-align:right;" (click)="ForgotPassword()">Forgot Password ?</p>
+         <div style="border: 3px solid #2C2E35; letter-spacing:2px;margin:auto; border-radius:12px; width:100%; background-color:#2C2E35;">
+           <div style="padding:2px;">
+               <ion-input [(ngModel)]="email" style="color:#727F89; letter-spacing:2px;font-family: lato-regular;" placeholder="name@example.com" type="email"></ion-input>
+           </div>
+           <hr>
+             <div style="padding:2px;">
+                 <ion-input [(ngModel)]="password" style="color:#727F89;letter-spacing:2px;font-family: lato-regular;" placeholder="*****" type="password"></ion-input>
+             </div>
+         </div>
+         <div style="text-align:center; margin-top:10%;">
+             <button ion-button style="width:50%; padding: 6%;font-family: lato-regular; letter-spacing:2px; background-color:#ED5564; border-radius:10px;" (click)="ScanIt()" type="submit">Scan Now</button>     
+         </div>
+     </div>
+
+     <div  style="text-align:center;">
+        <p style="color:#727F89; letter-spacing:2px;">If you don't have an account <button ion-button (click)="RegisterPage()" style=" margin-top:-1%; text-transform:none;" clear>Sign up</button></p>
+      </div>
+     
+   </div> 
+   
+
+
+   <!-- Credits -->
+   </ion-content>
+   <ion-footer class="footer-background-color" style="background-color:#292B32;">
+       <ion-toolbar style="background-color:#292B32;">
+           <div  style="text-align:center;">
+               <p style="color:#727F89; letter-spacing:2px;">©2017 Ulcreative Softwares</p>
+             </div>
+       </ion-toolbar>
+     </ion-footer>

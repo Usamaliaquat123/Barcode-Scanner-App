@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
+    <Identity Name="com.iqrScannerUlcreativeSoftwares.com" Publisher="CN=$username$" Version="0.0.1.0" />
+    <mp:PhoneIdentity PhoneProductId="c28bb9d0-ce97-11e7-a63f-4f5ca8a46ef5" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <Properties>
+        <DisplayName>iQr Scanner</DisplayName>
+        <PublisherDisplayName>Ionic Framework Team</PublisherDisplayName>
+        <Logo>images\StoreLogo.png</Logo>
+        <Description>An awesome Ionic/Cordova app.</Description>
+    </Properties>
+    <Dependencies>
+        <TargetDeviceFamily MaxVersionTested="10.0.10240.0" MinVersion="10.0.10240.0" Name="Windows.Universal" />
+    </Dependencies>
+    <Resources>
+        <Resource Language="x-generate" />
+    </Resources>
+    <Applications>
+        <Application Id="com.iqrScannerUlcreativeSoftwares.com" StartPage="ms-appx-web://com.iqrscannerulcreativesoftwares.com/www/index.html">
+            <uap:VisualElements BackgroundColor="#464646" Description="An awesome Ionic/Cordova app." DisplayName="iQr Scanner" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+                <uap:SplashScreen Image="images\splashscreen.png" />
+                <uap:DefaultTile ShortName="iQr Scanner" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
+                <uap:InitialRotationPreference>
+                    <uap:Rotation Preference="portrait" />
+                </uap:InitialRotationPreference>
+            </uap:VisualElements>
+            <uap:ApplicationContentUriRules>
+                <uap:Rule Match="http://10.68.71.107:8100" Type="include" WindowsRuntimeAccess="all" />
+                <uap:Rule Match="http://10.68.71.107:8101" Type="include" WindowsRuntimeAccess="all" />
+                <uap:Rule Match="http://192.168.169.2:8100" Type="include" WindowsRuntimeAccess="all" />
+                <uap:Rule Match="ms-appx-web:///" Type="include" WindowsRuntimeAccess="all" />
+            </uap:ApplicationContentUriRules>
+        </Application>
+    </Applications>
+    <Capabilities>
+        <Capability Name="internetClient" />
+        <uap:Capability Name="contacts" />
+        <DeviceCapability Name="webcam" />
+    </Capabilities>
+</Package>

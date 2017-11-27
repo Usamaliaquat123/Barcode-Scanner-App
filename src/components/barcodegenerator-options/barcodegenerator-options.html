@@ -1,0 +1,59 @@
+<ion-header  class="header-color-change-barcodegenerator-otions" swipeEnabled="True">
+  <ion-navbar >
+    <ion-buttons left>
+      <button color="dark" ion-button menuToggle>
+        <ion-icon color="light" name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    
+    <ion-title class="font-color-change-barcodegenerator-otions">Method</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content  class="no-scroll" style="background-image: url(./assets/imgs/background-home.jpeg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;">
+  <div style="background-color:#2f2e2e;width:100%; height:100%; opacity:.8;">
+ <br>
+    <div style="color:aliceblue; text-align:center;letter-spacing:2px; font-size:12px;">
+        <p>What type of qrcode you want to generate...</p>
+    </div>
+
+  
+
+    <ion-grid >
+      <ion-row>
+        <ion-col style="width:100%; opacity:.5;" >
+          <div (click)="clickOnContact()" class="hover-effect-selector-home-main-page" style="text-align:center;padding:40% 20%; border:1px solid aliceblue;">
+              <img src="./assets/imgs/OtherImages/generate/contact.png" width="60" height="60" alt="">
+              <p style="color:aliceblue; letter-spacing:1px;">Contact</p>
+            </div>
+        </ion-col>
+        <ion-col style="opacity:.5;">
+          <div (click)="clickOnEmail()" class="hover-effect-selector-home-main-page" style="text-align:center;padding:40% 20%; border:1px solid aliceblue;">
+            <img src="./assets/imgs/OtherImages/generate/msg.png" width="60" height="60" alt="">
+            <p style="color:aliceblue; letter-spacing:1px;">Email</p>
+        </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+      <ion-col style="opacity:.5;">
+          <div (click)="clickOnText()" class="hover-effect-selector-home-main-page" style="text-align:center;padding:40% 20%; border:1px solid aliceblue;">
+              <img src="./assets/imgs/OtherImages/generate/text.png" width="60" height="60" alt="">
+              <p style="color:aliceblue; letter-spacing:1px;">Simple Text</p>
+            </div>
+      </ion-col>
+        <ion-col style="opacity:.5;">
+            <div (click)="clickOnSms()" class="hover-effect-selector-home-main-page" style="text-align:center;padding:40% 20%; border:1px solid aliceblue;">
+                <img src="./assets/imgs/OtherImages/generate/sms.png" width="60" height="60" alt="">
+                <p style="color:aliceblue; letter-spacing:1px;">Sms</p>
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    
+  </div>
+
+</ion-content>

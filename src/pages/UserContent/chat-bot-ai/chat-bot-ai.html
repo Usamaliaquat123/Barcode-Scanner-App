@@ -1,0 +1,89 @@
+<ion-header  class="header-color-change-chat-page" swipeEnabled="True">
+  <ion-navbar >
+    <ion-buttons left>
+      <button color="dark" ion-button menuToggle>
+        <ion-icon color="light" name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title class="font-color-change-chat-page">Chat Bot</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content style="background-color:#2C2E35;">
+  
+  <!-- <input ion-input type="text" [(ngModel)]="question">
+  
+    <button ion-button (click)="ask(question)">
+      Ask
+    </button> -->
+<!--   
+    <div class="Rectangle1">
+       sadsadasd
+    </div>
+    -->
+
+
+
+
+<!-- <div *ngFor="let message of messages | async">
+    <div  *ngIf="message.sentBy == 'user'">
+        <ion-list style="background-color:#2C2E35;"> -->
+            <!-- text-wrap is used to break line into multiple lines -->
+          <!-- <ion-item text-wrap style="background-color:#2C2E35;">
+                <ion-avatar item-end>
+                  <img style="background-color:#15151E;" src="./assets/imgs/OtherImages/UserImage/1.png">
+                </ion-avatar>
+                <div  class="user" >
+                    {{ message.content }}
+                </div>
+              </ion-item>
+            </ion-list>
+    </div> -->
+    <!-- <div *ngIf="message.sentBy == 'bot'">
+        <ion-list style="background-color:#2C2E35;"> -->
+            <!-- text-wrap is used to break line into multiple lines -->
+              <!-- <ion-item text-wrap style="background-color:#2C2E35;">
+                <ion-avatar item-start>
+                  <img style="background-color:#15151E;" src="./assets/imgs/OtherImages/UserImage/1.png">
+                </ion-avatar>
+                <div  class="bot" >
+                    {{ message.content }}
+                </div>
+              </ion-item>
+            </ion-list>
+    </div>
+    
+</div>  -->
+
+
+
+<div *ngFor="let message of messages | async">
+  <div class="message" [ngClass]="{'from': message.sentBy == 'bot',
+                                     'to' : message.sentBy == 'user'}"> 
+            {{ message.content}}
+     </div>
+</div>
+
+
+
+
+</ion-content>
+
+<div class="footer-chatBot"></div>
+  <ion-footer  class="footer-background-color-chatBot" style="background-color:#292B32;">
+      <ion-toolbar style="background-color:#292B32;">
+        <ion-row class="message_row" style="background-color:#292B32;">
+          <ion-col col-9 style="background-color:#292B32;">
+            <ion-item no-lines style="background-color:#292B32">
+              <ion-input style="background-color:#292B32; color:aliceblue; font-size:13px;  letter-spacing:3px;font-family: lato-regular; " type="text" placeholder="Message" [(ngModel)]="UserQuestion"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-3>
+            <button ion-button icon-end ion-button clear style="color:#ED5564;text-transform:none;" (click)="sendMessage(UserQuestion)" [disabled]="question === ''">
+            Send
+            <ion-icon name="ios-send-outline"></ion-icon>
+          </button>
+           
+          </ion-col>
+        </ion-row>
+      </ion-toolbar>
+    </ion-footer>

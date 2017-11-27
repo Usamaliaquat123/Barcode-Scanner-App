@@ -1,0 +1,313 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// Selecting fonts and give it a name
+@font-face {
+    font-family: lato-regular;
+    src: url(/assets/fonts/Lato-Regular.ttf);
+ }
+ @font-face{
+     font-family: firaSans-Regular;
+     src:url(/assets/fonts/FiraSansRegular.otf);
+ }
+ @font-face{
+     font-family: firaSans-Medium;
+     src: url(/assets/fonts/FiraSansMedium.otf);
+ }
+
+ .header-color-change-menu-page > .toolbar > .toolbar-background-md{
+     background-color:#22242B;
+ }
+///////////////////////////////////////////////////
+// Changing Background color of footer    #login page
+ .footer-background-color >.toolbar > .toolbar-background-md{
+     background-color: #292B32;
+ }
+ ///////////////////////////////////////////////////
+// Changging Background color of Header  #Restore Page
+.header-restore-password > .toolbar >.toolbar-background-md{
+    background-color: #22242B;
+}
+// Changing color of header #Restore Page
+.forget-style-color > .toolbar-title{
+    font-family: lato-regular;
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+
+
+
+///////////////////////////////////////////////////
+// Changing background color of header @barcode option
+.header-color-change-barcodegenerator-otions > .toolbar > .toolbar-background-md{
+    background-color:#2f2e2e;opacity:.8;
+    
+}
+// Changing font color of header #barcode options
+.font-color-change-barcodegenerator-otions > .toolbar-title{
+    font-family: lato-regular;
+    font-size: 12px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+// Changing Background Color of Header #UserPreviousData Page
+.header-color-change-UsersPreviousData-page > .toolbar > .toolbar-background-md{
+    background-color:#292B32;
+
+}
+
+
+// Changing Background Color of Header #HomePage
+.header-color-change-home-page > .toolbar > .toolbar-background-md{
+    background-color:#2f2e2e;opacity:.8;
+}
+
+// Changing font Color of Header #HomePage
+.font-color-change-home-page > .toolbar-title{
+    font-family: lato-regular;
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+}
+// Changing Background Color of Header #ChatBot
+.header-color-change-chat-page > .toolbar > .toolbar-background-md{
+    background-color: #292B32;
+}
+// Changing Font Color of Header #Chatbot Page
+.font-color-change-chat-page > .toolbar-title{
+    font-family: lato-regular;
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+}
+// Changing Background color of header #Account Settings
+.header-color-change-accountSettings-page > .toolbar > .toolbar-background-md {
+    background-color: #292B32;
+}
+// Changing Font Color of Header #Account Settings
+.font-color-change-accountSettings-page > .toolbar-title{
+    font-family: lato-regular;
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+} 
+
+
+.user{
+    margin: 0 70px 10px;
+    margin-right:1px;
+    padding: 12px 20px;
+    position: relative;
+    border-radius: 30px 30px 0;
+    color:aliceblue;
+    background-color: #ED5564;
+}
+// ChatBot Box Design
+.bot{
+    margin: 0 70px 10px;
+    
+    padding: 12px 20px;
+    position: relative;
+    border-radius: 30px 30px 30px 0;
+    background-color: #ED5564;
+    color: aliceblue;
+    font-size: 13px;
+}
+
+.footer-background-color-chatBot >.toolbar > .toolbar-background-md{
+    background-color: #292B32;
+}
+
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+
+
+// Changing backgroun-color:
+
+
+// Changing background color of header #aboutUsPage
+.header-color-change-about-us > .toolbar > .toolbar-background-md{
+    background-color: #292B32;
+}
+// Changing Font color of header #AboutUsPage
+.font-color-change-about-us > .toolbar-title {
+    font-family: lato-regular;
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+// Changing Bcakground Color of Header #Feedback Page 
+.header-color-change-feedback > .toolbar > .toolbar-background-md {
+    background-color: #292B32;
+}
+// Changing font color of feedback
+.font-color-change-feedback > .toolbar-title{
+    color: aliceblue;
+    font-size:14px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+// Changing font coor of hEader #Feedback Page
+.font-color-change-about-us > .toolbar-title {
+    font-family: lato-regular;
+    font-size: 14px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    text-align: center;
+}
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////
+
+// Loading animation in register a page
+.local-body {
+    width: 100%;
+    height: 100%;
+    background: #0A212E;
+    margin: 0px;
+    overflow: hidden;
+    animation: color-loop 8s infinite;
+  }
+  
+  .waves {
+    position: relative;
+    top: 10%;
+    background: rgba(255, 255, 255, 0.3);
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    margin-left: -12px;
+    margin-top: -12px;
+    border-radius: 50%;
+    -webkit-backface-visibility: hidden;
+    &:before {
+      position: absolute;
+      background: white;
+      margin-left: -12px;
+      margin-top: -12px;
+      width: 50px;
+      height: 50px;
+      content: "";
+      display: block;
+      border-radius: 50%;
+      -webkit-backface-visibility: hidden;
+      animation: wave-animate 3s infinite ease-out;
+    }
+    &:after {
+      position: absolute;
+      background: white;
+      margin-left: -12px;
+      margin-top: -12px;
+      width: 50px;
+      height: 50px;
+      content: "";
+      display: block;
+      border-radius: 50%;
+      -webkit-backface-visibility: hidden;
+      opacity: 0;
+      animation: wave-animate 3s 1.5s infinite ease-out;
+    }
+  }
+  
+  @keyframes wave-animate {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+      transform-origin: center;
+    }
+  
+    100% {
+      transform: scale(3);
+      opacity: 0;
+      transform-origin: center;
+    }
+  }
+  
+  
+  @keyframes color-loop {
+    0% {
+      background: #2CAB5B;
+    }
+  
+    25% {
+      background: #FABC03;
+    }
+  
+    50% {
+      background: #ED4B40;
+    }
+  
+    75% {
+      background: #4286F3;
+    }
+  
+    100% {
+      background: #2CAB5B;
+    }
+  }
+
+
+
+  .hover-effect-selector-home-main-page:active {
+    background-color: #181717;
+  }
+
+  .no-scroll .scroll-content{
+    overflow: hidden;
+}
+
+.alert-wrapper > .alert-head {
+    background-color: #22242B;
+}
+.alert-wrapper > div > .alert-input-group > .alert-input-wrapper > input{
+    color: aliceblue;
+}
+.alert-wrapper > div {
+    background-color: #22242B;
+    color: aliceblue;
+}
+.alert-wrapper > .alert-button-group > .alert-button-default-md > span{
+    font-size:12px;
+    letter-spacing: 1px;
+    text-transform: none;
+    text-align: center;
+    color:aliceblue;
+}
+// back button settings
+.show-back-button > .button-inner > .ion-md-arrow-back{
+    color:aliceblue;
+    font-size: 14px;
+}
+.item-inner {
+    border-bottom-color: transparent !important;
+    box-shadow: none !important;
+    }

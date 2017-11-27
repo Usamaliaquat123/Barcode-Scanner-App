@@ -1,0 +1,20 @@
+<ion-header  class="header-color-change-feedback" swipeEnabled="True">
+    <ion-navbar >
+      <ion-buttons left>
+        <button color="dark" ion-button menuToggle>
+          <ion-icon color="light" name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title class="font-color-change-feedback">FeedBack</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content style="background-color:#2C2E35;">
+  <div style="padding:5%; text-align:center;">
+      <textarea [(ngModel)]="UsersfeedbackValue" style="border-style:none; letter-spacing:2px; background-color:#3D404A; color:aliceblue; width:90%; padding:5%;" placeholder="Type Your feedback" rows="20"></textarea>
+  </div>
+  <div style="padding:7%; text-align:right;">
+    <button style="font-size: 13px; letter-spacing:1px; text-transform:none; background-color:#3D404A; color:aliceblue;" (click)="SendYourFeed()" ion-button>Send Your FeedBack</button>
+  </div>
+
+</ion-content>

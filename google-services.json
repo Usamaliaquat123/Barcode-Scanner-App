@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "248660387556",
+    "firebase_url": "https://iqr-scanner-app-ulcreativesoft.firebaseio.com",
+    "project_id": "iqr-scanner-app-ulcreativesoft",
+    "storage_bucket": "iqr-scanner-app-ulcreativesoft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248660387556:android:fcf2784ff3761ef2",
+        "android_client_info": {
+          "package_name": "com.iqrScannerUlcreativeSoftwares.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248660387556-oev9oq9k6t8n0vum8vsimt5hm0ktd0m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ3IvybGk5rmQXzb1ymx_jbrmY7s8ftvI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+<!-- Default:  style="max-width: 250px!important;" -->
+<ion-menu [content]="content">
+    <ion-header class="header-color-change-menu-page">
+      <ion-toolbar color="dark">
+        <ion-title style="text-align:center;"><p style="font-family: lato-regular;font-size:12px;letter-spacing:2px">Menu</p></ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content  class="no-scroll" style="background-color:#22242B;">
+
+      <div style="text-align:center; padding-top:10%;">
+          <img src="./assets/imgs/OtherImages/UserImage/1.png" width="75"   height="75">
+      </div>
+      <div  style="text-align:center; padding-top:1%;">
+          <button ion-button clear style="font-family: lato-regular;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue">Usama Liaquat</button>       
+      </div>
+      <div  style="text-align:center; padding-top:15%;">
+          <button ion-button clear style="opacity:.6;font-family: lato-regular; font-size:12px;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue" (click)="AccountSettings()">Account Settings</button>       
+      </div>
+      <div style="text-align:center;  padding-top:3%;">
+          <button ion-button clear style="opacity:.6;font-family: lato-regular;font-size:12px;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue" (click)="GenerateCode()">Generate Code</button>             
+      </div>
+      <div style="text-align:center; padding-top:3%;">
+          <button ion-button clear style="opacity:.6;font-family: lato-regular;font-size:12px;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue" (click)="ScanCode()">Scan Code</button>                     
+      </div>
+      <div style="text-align:center; padding-top:3%;">
+            <button ion-button clear style="opacity:.6;font-family: lato-regular;font-size:12px;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue" (click)="ChatBotPage()">Chat with us</button>                     
+      </div>  
+      <div style="text-align:center; padding-top:3%;">
+          <button ion-button clear style="opacity:.6;font-family: lato-regular;font-size:12px;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue" (click)="AboutUs()">About Us</button>                     
+      </div>
+      <div style="text-align:center; padding-top:3%;">
+          <button ion-button clear style="opacity:.6;font-family: lato-regular;font-size:12px;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue" (click)="FeedBack()">FeedBack</button>                     
+      </div>
+      <div style="text-align:center; padding-top:3%;">
+          <button ion-button clear style="opacity:.6;font-family: lato-regular;font-size:12px;text-transform:none;letter-spacing:2px; background-color:#22242B; color:aliceblue" (click)="Logout()">Log out</button>                     
+      </div>
+ 
+    
+
+    </ion-content>
+  
+  </ion-menu>
+
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="true"></ion-nav>
+  
+  
