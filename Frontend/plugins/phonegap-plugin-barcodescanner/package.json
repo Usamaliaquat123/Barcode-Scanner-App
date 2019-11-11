@@ -66,7 +66,7 @@
   "dependencies": {},
   "description": "You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.",
   "devDependencies": {
-    "jasmine-node": "1.14.5",
+    "jasmine-node": "3.0.0",
     "pluginpub": "^0.0.9"
   },
   "directories": {},
