@@ -1,0 +1,19 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "Frontend/package.json",
+        "Frontend/plugins/cordova-plugin-apiai/package.json",
+        "Frontend/plugins/cordova-plugin-camera/package.json",
+        "Frontend/plugins/cordova-plugin-compat/package.json",
+        "Frontend/plugins/cordova-plugin-contacts/package.json",
+        "Frontend/plugins/cordova-plugin-device/package.json",
+        "Frontend/plugins/cordova-plugin-ionic-webview/package.json",
+        "Frontend/plugins/cordova-plugin-splashscreen/package.json",
+        "Frontend/plugins/cordova-plugin-whitelist/package.json",
+        "Frontend/plugins/ionic-plugin-keyboard/package.json",
+        "Frontend/plugins/phonegap-plugin-barcodescanner/package.json"
+      ]
+    }
+  }
+}
